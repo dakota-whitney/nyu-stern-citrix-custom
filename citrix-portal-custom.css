@@ -1,0 +1,151 @@
+/* Edit this file to customize the User Interface by overriding the existing CSS Styles. 
+ * You can use browser development tools to identify the CSS classes you want to customize.
+ */
+
+/* When using the StoreFront Authentication SDK to return custom forms, a class "customform" is added to each form.
+ * The following commented CSS rule illustrates how to modify the width of form field labels for custom forms.
+ */
+
+/*
+.customform .field {
+    width: 400px;
+}
+*/
+
+/* The following section of the file is reserved for use by StoreFront. */
+/* CITRIX DISCLAIMER: START OF MANAGED SECTION. PLEASE DO NOT EDIT ANY STYLE IN THIS SECTION */
+/* CITRIX DISCLAIMER: END OF MANAGED SECTION. */
+/* You may add custom styles below this line. */
+
+/*Hide all Receiver-related elements*/
+.installbutton,
+._ctxstxt_Install,
+._ctxstxt_ClickInstall,
+.bar-separator,
+._ctxstxt_WelcomeToReceiver,
+._ctxstxt_SecurityDetails,
+.welcome-for-full-experience,
+#menuChangeClientBtn,
+#menuActivateBtn {
+  display: none;
+}
+
+/*Mandatory popup message element*/
+.messageBoxPopup {
+  width: 75% !important;
+  height: 50% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/*Popup title*/
+.messageBoxTitle {
+  font-size: 50px;
+  margin-bottom: 70px;
+  font-weight: bolder;
+  color: #57068c;
+}
+
+/*Popup message*/
+.messageBoxText {
+  font-size: 20px;
+}
+
+/*Emphasize web login link*/
+._ctxstxt_SkipToLogon {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: auto;
+  font-size: 30px;
+}
+
+/*Begin dynamic message elements*/
+.customAuthHeader {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.customAuthHeader a {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.header {
+  text-align: center;
+  padding: 10px;
+  display: block !important;
+}
+.header a {
+  color: white;
+  text-decoration: underline;
+}
+
+.pluginAuthHeader {
+  text-align: center;
+  padding: 10px;
+  display: block !important;
+}
+.pluginAuthHeader a {
+  color: white;
+  text-decoration: underline;
+}
+
+.customAuthBottom {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+}
+
+.customAuthBottom a {
+  color: yellow;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.customAuthFooter {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  padding: 10px;
+}
+.customAuthFooter a {
+  color: white;
+  font-size: 10px;
+  color: white;
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  display: block !important;
+}
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.pluginAuthFooter {
+  text-align: center;
+  padding: 10px;
+  display: block !important;
+}
+.pluginAuthFooter a {
+  color: white;
+  text-decoration: underline;
+}
