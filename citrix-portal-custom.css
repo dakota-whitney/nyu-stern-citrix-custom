@@ -17,20 +17,19 @@
 /* CITRIX DISCLAIMER: END OF MANAGED SECTION. */
 /* You may add custom styles below this line. */
 
-/*Hide all Receiver-related elements*/
 .installbutton,
 ._ctxstxt_Install,
 ._ctxstxt_ClickInstall,
 .bar-separator,
 ._ctxstxt_WelcomeToReceiver,
 ._ctxstxt_SecurityDetails,
+._ctxstxt_SoftwareNotDetected,
 .welcome-for-full-experience,
 #menuChangeClientBtn,
 #menuActivateBtn {
   display: none;
 }
 
-/*Mandatory popup message element*/
 .messageBoxPopup {
   width: 75% !important;
   height: 50% !important;
@@ -49,7 +48,6 @@
   }
 }
 
-/*Popup title*/
 .messageBoxTitle {
   font-size: 50px;
   margin-bottom: 70px;
@@ -57,21 +55,27 @@
   color: #57068c;
 }
 
-/*Popup message*/
 .messageBoxText {
   font-size: 20px;
 }
 
-/*Emphasize web login link*/
 ._ctxstxt_SkipToLogon {
   display: flex;
   text-align: center;
   justify-content: center;
   height: auto;
-  font-size: 30px;
+  font-size: 15px;
+  margin: -40px;
 }
 
-/*Begin dynamic message elements*/
+._ctxstxt_UseLightVersion,
+._ctxstxt_YouCanUseLightVersion {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0px 80px 10px 0px;
+}
+
 .customAuthHeader {
   color: white;
   text-align: center;
