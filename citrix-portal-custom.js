@@ -1,5 +1,7 @@
 // Edit this file to add your customized JavaScript or load additional JavaScript files.
 
+document.title = "Apps@Stern Portal";
+
 /* Function to fetch local txt files to avoid browser caching*/
 function setDynamicContent(txtFile, element) {
     CTXS.ExtensionAPI.proxyRequest({
